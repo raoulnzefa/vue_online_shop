@@ -12,11 +12,13 @@
 
 export default {
     name: 'v-main-wrapper',
-    components: {
+    components: { // дети компонента v-main-wrapper
         vCatalog,
         vCart,
-    }, // дети компонента v-main-wrapper
-    props: {}, // то что прилетает из родителя (извне)
+    }, 
+    props: { // то что прилетает из родителя (откуда-то извне)
+
+    }, 
     data() { // персональные данные компонента
         return {
             title: 'Main wrapper'
@@ -39,10 +41,6 @@ export default {
 
 <style>
     .v-main-wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         max-width: 900px;
         margin: 0 auto;
     }
