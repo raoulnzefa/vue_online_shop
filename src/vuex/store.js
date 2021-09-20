@@ -6,7 +6,8 @@ Vue.use(Vuex);
 
 let store = new Vuex.Store({
     state: { // тут хранятся все данные, переменные, объекты и т.д.
-        products: []
+        products: [],
+        cart: [],
     },
     mutations: { // с помощью мутаций меняем данные состояний в state. СИНХРОННЫ. ОДИН В ОДИН МОМЕНТ.
         SET_PRODUCTS_TO_STATE: (state, products) => {
@@ -31,6 +32,9 @@ let store = new Vuex.Store({
     getters: { // даёт возможность получить данные из state
         PRODUCTS(state) {
             return state.products;
+        },
+        CART(state) {
+            return state.cart;
         }
     }
 })

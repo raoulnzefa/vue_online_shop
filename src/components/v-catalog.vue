@@ -6,7 +6,7 @@
             v-for=
             "product in PRODUCTS" v-bind:key="product.article"
             v-bind:product_data="product"
-            @sendArticle="shoChildArticleInConsole"
+            @addToCart="addToCart"
         /> <!-- @sendArticle="shoChildArticleInConsole" - это связь v-catalog-item с v-catalog-->
     </div>
     </div>
@@ -35,7 +35,7 @@ export default {
         ...mapActions([
           'GET_PRODUCTS_FROM_API'
         ]),
-        shoChildArticleInConsole(data) { 
+        addToCart(data) { 
             console.log(data);
         }
     },
