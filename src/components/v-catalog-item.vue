@@ -32,6 +32,9 @@ export default {
         addToCart() { // пробрасывает карточку товара в v-catalog
             this.$emit('addToCart', this.product_data);
         }
+    },
+    mounted() {
+        this.$set(this.product_data, 'quantity', 1); // $set - внутренний метод vue, которые добавляет ключ к элементу
     } 
 }
 </script>
