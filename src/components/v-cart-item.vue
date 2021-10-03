@@ -40,7 +40,7 @@ export default {
         },
     },
     mounted() {
-        this.$set(this.cart_item_data, 'quantity', 1); // $set - внутренний метод vue, которые добавляет ключ к элементу
+
     }
 }
 </script>
