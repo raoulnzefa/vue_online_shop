@@ -29,7 +29,7 @@ export default {
     },
     computed: {},
     methods: {
-        addToCart() { // пробрасывает article в v-catalog
+        addToCart() { // пробрасывает карточку товара в v-catalog
             this.$emit('addToCart', this.product_data);
         }
     } 
